@@ -9,12 +9,7 @@ generator client {
 }
 
 datasource db {
-  provider  = "postgresql"
-  // for local development
-  // url      = env("postgres://neondb_owner:uCT6Hr2nOoaY@ep-frosty-hill-a55c7ijt-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require")
-  // for Vercel
-  url       = env("postgres://neondb_owner:uCT6Hr2nOoaY@ep-frosty-hill-a55c7ijt-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require&pgbouncer=true&connect_timeout=15")
-  directUrl = env("postgresql://neondb_owner:uCT6Hr2nOoaY@ep-frosty-hill-a55c7ijt.us-east-2.aws.neon.tech/neondb?sslmode=require")
+
 }
 
 enum Role {
